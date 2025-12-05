@@ -655,6 +655,21 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+  // Hamburger menu open
+  const hamburger = document.querySelector('.hamburger');
+  if (hamburger) {
+    hamburger.addEventListener('click', () => {
+      document.querySelector('.left').style.left = '0';
+    });
+  }
+  // Sidebar close button
+  const closeBtn = document.querySelector('.close');
+  if (closeBtn) {
+    closeBtn.addEventListener('click', () => {
+      document.querySelector('.left').style.left = '-120%';
+    });
+  }
+});
 async function main() {
   try {
     // Load all songs from both folders for initial display
@@ -943,6 +958,7 @@ volInput?.addEventListener("change", (e) => {
 });
 
 main();
+
 
 
 
