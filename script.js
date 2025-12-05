@@ -640,8 +640,9 @@ async function initializeCards() {
 // call after DOM is ready
 document.addEventListener("DOMContentLoaded", () => {
   setTimeout(initializeCards, 500); // small delay to ensure cards are rendered
-});
- const hamburger = document.querySelector('.hamburger');
+
+  // Hamburger menu open
+  const hamburger = document.querySelector('.hamburger');
   if (hamburger) {
     hamburger.addEventListener('click', () => {
       document.querySelector('.left').style.left = '0';
@@ -944,8 +945,5 @@ volInput?.addEventListener("change", (e) => {
 });
 
 main();
-
-
-
 
 
